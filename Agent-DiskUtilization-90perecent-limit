@@ -1,0 +1,29 @@
+Step 1: ssh into your server.
+
+Step 2a: cd to the following directory to edit the "agent.app.config.yaml"
+
+##Make sure your kasm docker container is stopped before editing the .yaml file###
+
+##Note: In my instance, even though Kasm is installed under /mnt/cache/appdata/kasm > it is also located under /mnt/user/appdata/kasm
+##Note: Personally, my appdata share is not set as cache only, I have mover autmatically move "cache > array" ;
+##Note: Even with my containers storage set up correctly, I just don't want to chance any of my containers stopping because my cache pool is full.
+
+Step 2b: cd /mnt/user/appdata/kasm/opt/kasm/1.14.0.1/conf/app
+
+##Note: use your preferred cli editor, in my instance, its nano
+
+Step 3: nano agent.app.config.yaml
+
+##Edit the line #4 "disk_usage_limit: 0.9"
+
+Example: "disk_usage_limit: 0.99".
+
+Step 4: Save your edit/change, and exit out of the file.
+- nano: CTL-X > Y > Enter
+
+Now you can start your kasm docker again and should be able to continue pulling container images / install more Workspaces.
+
+##Note: 90% Utilization in my instance: my disk free space on my Unraid server was currently at over 4TB Free, so increasing the threshold allowed more Kasm container images to be pulled and installed.
+
+**This guide worked for me as of today, February 14th 2024** 
+

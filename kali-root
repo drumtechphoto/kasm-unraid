@@ -1,0 +1,28 @@
+Kasm Admin Home Page
+
+Workspaces > Workspaces
+
+Find Kali Linux
+
+Click on the blue > arrow
+
+Click on the pencil/pen
+
+Under "Docker Run Config Override (JSON), enter / copy past the following:
+
+{
+  "user": "root"
+}
+
+Click on save.
+
+Your imaage may redownload, wait maybe 5 minutes.
+
+Launch your Kali Linux Workspace, in terminal, type "su -" and press enter.
+
+here you have it, you are now able to run Terminal as root user in Kali Linux.
+
+Source / Credit: NetworkChuck on YouToube
+link to video: https://www.youtube.com/watch?v=U7e-mcJdZok&t=830s
+Timestamp: 13:40
+

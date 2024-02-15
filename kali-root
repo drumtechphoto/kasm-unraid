@@ -1,10 +1,13 @@
-Kasm Admin Home Page
+Running Kali Linux Workspace in Kasm as root user / run terminal as root:
+##Works on the latest version of Kasm on Unraid OS 6.12.6 / Date: 2/14/2024 (February 14th, 2024)
 
-Workspaces > Workspaces
+From Kasm Admin Home Page >>
 
-Find Kali Linux
+Click on Workspaces > Workspaces
 
-Click on the blue > arrow
+Depending the number of Workspaces installed, scroll and find Kali Linux
+
+Click on the blue > arrow (to the right of the Workspace)
 
 Click on the pencil/pen
 
@@ -26,3 +29,9 @@ Source / Credit: NetworkChuck on YouToube
 link to video: https://www.youtube.com/watch?v=U7e-mcJdZok&t=830s
 Timestamp: 13:40
 
+___________________________________________________________________________________________________
+Other Source, https://www.blog.techraj156.com/post/installing-kasm-workspaces-and-setting-up-kali-linux-for-penetration-testing
+
+
+{"user":"root","cap_add":["NET_ADMIN"],"devices":
+["dev/net/tun","/dev/net/tun"],"privileged":true}

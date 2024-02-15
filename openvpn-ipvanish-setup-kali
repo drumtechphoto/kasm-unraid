@@ -1,0 +1,33 @@
+This will be a basic guide on how to get IPVanish OpenVPN working with your Kali Linux Workspace, running through the openvpn tool in terminal.
+
+##AS of 2/14/2024, to initiate/allow Kali Linux to connect to the repositories to pull downloads/packages, you must run the following:
+- sudo apt update -y
+
+Launch terminal and cd into a directory you want to download & keep your ipvanish openvpn configs in.
+- Example: "cd /Documents" or "cd /Downloads"
+
+Then type "mkdir ipvanish"
+
+Then type or copy/paste in terminal, "wget https://configs.ipvanish.com/configs/configs.zip"
+
+Then type or copy/paste, "unzip configs.zip"
+
+##If openvpn is Not installed, 
+- type or copy/paste "sudo apt install openvpn network-manager-openvpn network-manager-openvpn-gnome -y"
+
+In the "configs" directory, locate the name of the .ovpn config you would like to use.
+
+Use VIM or nano to edit the config and comment out the line that looks like "keysize 256"
+-should look like, "#keysize 256" once edited
+
+Save your changes.
+
+Type "sudo openvpn {filenameofthe}.ovpn" config file and press enter.
+
+Enter your ipvanish username, press Enter.
+
+Enter your ipvanish password, press Enter.
+
+Review the log/window to confirm you have successfully connected.
+
+
